@@ -25,4 +25,4 @@ The first python script valid.py loops through all ascii letters one by one and 
 
 once it returns all found characters I take this string and store it into a array inside of solver.py
 
-This python script essentialy loops repeating the same process but inserting a new character from the foundChars Array to the start of the Flag string until the entire flag is leaked. (each loop it is checking the used storage space.)
+This python script essentialy loops repeating the same process but inserting a new character from the foundChars Array to the start of the Flag string until the entire flag is leaked. (each loop it is checking the bytes stored.)
