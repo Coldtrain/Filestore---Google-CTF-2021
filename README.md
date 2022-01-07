@@ -23,4 +23,4 @@ The first python script valid.py loops through all ascii letters one by one and 
 
 once it returns all found characters I take this output and store it into a ValidChars Array inside of solver.py
 
-This python script essentialy loops repeating the same process but inserting a new character from the validChars Array to the start of the Flag string until the entire flag is leaked. (each loop it is checking the bytes stored.)
+This python script essentially loops repeating the same process but inserting a new character from the validChars Array to the start of the Flag string until the entire flag is leaked. (each loop it is checking the bytes stored.)
