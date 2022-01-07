@@ -3,9 +3,7 @@ My quick and dirty solution to Filestore, Life has kept me busy so i didn't get 
 
 Code written during the 2021 Google CTF.
 
-Deduplication is the process of storing large amounts of data, but removing duplicates / repeating data, and having all copies point to one index.
-
-It allows databases and backup solutions to save on immense amounts of storage space.
+Deduplication is the process of storing large amounts of data but removing duplicates / repeating data while having all copies point to one index; By doing so allows databases and backup solutions to save on immense amounts of storage space.
 
 The exploit in this CTF is that deduplication is its own worst enemy.
 
