@@ -16,7 +16,7 @@ Google gives you a "file storage" service which you can access through netcat.
 
 However once playing around with it you will notice storage size increases only when entering non matching characters.
 
-Both python scripts connect to the Google CTF Python server via using PwnTools, this is a much simpler and more efficient alternative then using python sockets to send and recieve TCP buffers. (you do not need to specify the TCP buffer size you are waiting for etc.)
+Both python scripts connect to the Google CTF Python TCP socket server using PwnTools, this is a much simpler and more efficient alternative then using python sockets to send and recieve TCP buffers. (you do not need to specify the TCP buffer size you are waiting for etc.)
 
 
 PwnTools is an advanced Python library for writing exploits and payloads.
