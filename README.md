@@ -21,6 +21,6 @@ PwnTools is an advanced Python library for writing exploits and payloads.
 
 The first python script valid.py loops through all ascii letters one by one and closes the connection to the server, each character which did not increase storage size was already stored by admin. simple.
 
-once it returns all found characters I take this string and store it into a string inside of solver.py
+once it returns all found characters I take this output and store it into a ValidChars Array inside of solver.py
 
 This python script essentialy loops repeating the same process but inserting a new character from the validChars Array to the start of the Flag string until the entire flag is leaked. (each loop it is checking the bytes stored.)
